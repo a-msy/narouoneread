@@ -1,0 +1,39 @@
+  h1 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  p {
+    line-height: 1.7;
+    margin-left: 20px;
+  }
+  .tate{
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode:vertical-rl;   
+  }
+  div {
+    margin-left: 0px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 18px;
+  }
+  .mixed {
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
+  }
+  .upright {
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+
+  }
+  .sideways {
+    -webkit-text-orientation: sideways;
+    text-orientation: sideways;
+  }
+  .text-combine {
+    -webkit-text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-upright: all;
+  }
