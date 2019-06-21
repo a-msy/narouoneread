@@ -2,14 +2,17 @@
     font-size: 30px;
     margin-left: 20px;
   }
-  p {
-    line-height: 1.7;
-    margin-left: 20px;
-  }
   .tate{
-    writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    -webkit-writing-mode:vertical-rl;   
+    -webkit-writing-mode: vertical-rl; /* 実装済 */
+    -moz-writing-mode: vertical-rl; /* 実装済 */
+    -ms-writing-mode: vertical-rl; /* 実装済 */
+    writing-mode: vertical-rl; 
+  }
+  
+  /* 字下げ */
+  p {
+    margin-left: 1rem;
+    text-indent: 1rem;
   }
   div {
     margin-left: 0px;

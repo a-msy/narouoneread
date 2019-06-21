@@ -4,8 +4,8 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card mixed tate">
-                <div class="card-body">
+            <div class="card">
+                <div class="card-body tate mixed" id ="narouhonbun">
 <?php
 //echo $ppp= resource_path('php/phpQuery-onefile.php');
 // $ncode＝Nコード　$numが話数
@@ -30,13 +30,13 @@ function shownovel($ncode,$num){
     $content = $html["#novel_honbun"];
     $str = $content->text();
     $str= str_replace('。', '。</li><li>', $str);
-    //$str= str_replace('　', '</li><br>', $str);
-    $wrap_word = mb_wordwrap($str, 100000000, '<br>', true);//myfuncに記載の関数
+    $str= str_replace('」', '」</li><li>', $str);
+    $wrap_word = mb_wordwrap($str, 999999999, '</li><li>', true);//myfuncに記載の関数
     echo $wrap_word;
 }
 echo '<ul> <li>';
-shownovel('n4836fm',1);
-echo '終わり</li> </ul>';
+shownovel('n4836fm',2);
+echo '</li><li>終わり</li> </ul>';//wordwrapするなら</li><li>終わり</li> </ul>　しないなら
 ?>
                 </div>
             </div>
